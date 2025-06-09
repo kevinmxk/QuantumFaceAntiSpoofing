@@ -1,0 +1,9 @@
+numpy
+torch
+scikit-learn
+joblib
+qiskit
+qiskit-machine-learning
+matplotlib
+tqdm
+Pillow
