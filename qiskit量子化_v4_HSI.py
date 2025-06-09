@@ -42,10 +42,10 @@ def preprocess_hsi_image(img_path):
     :param img_path: 图像文件路径
     :return: 处理后的向量
     """
-    img = Image.open(img_path).convert('RGB')  # 打开并转换为 RGB 格式
+    img = Image.open(img_path)  # 以HSI编码方式打开图像
     img = img.resize(IMAGE_SIZE)  # 缩放图像
     img_array = np.array(img, dtype=np.float32) / 255.0  # 归一化像素值
-    hsi = color.rgb2hsv(img_array)  # 转换为 HSV 颜色空间
+    hsi = color.rgb2hsv(img_array)  # 转换为 HSV 颜色空间 (HSI)
     return pad_or_truncate(hsi.transpose(2, 0, 1).reshape(-1), 256)  # 调整维度并填充或截断
 
 
@@ -55,7 +55,7 @@ def preprocess_lab_image(img_path):
     :param img_path: 图像文件路径
     :return: 处理后的向量
     """
-    img = Image.open(img_path).convert('RGB')  # 打开并转换为 RGB 格式
+    img = Image.open(img_path)  # 以LAB编码方式打开图像
     img = img.resize(IMAGE_SIZE)  # 缩放图像
     img_array = np.array(img, dtype=np.float32) / 255.0  # 归一化像素值
     lab = color.rgb2lab(img_array)  # 转换为 LAB 颜色空间
