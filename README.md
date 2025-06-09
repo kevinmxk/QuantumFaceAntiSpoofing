@@ -68,11 +68,33 @@ pip install -r requirements.txt
 - qiskit, qiskit-machine-learning
 - tqdm, matplotlib, Pillow
 
+---
+
+## 数据集声明
+
+本项目使用的人脸数据集为**Human Faces Dataset 人脸数据集**，相关信息如下：
+
+- **数据集名称**: Human Faces Dataset 人脸数据集
+- **发布机构**: Kaggle 
+- **下载地址**: https://orion.hyper.ai/datasets/33799
+- **原始发布地址**: https://www.kaggle.com/datasets/kaustubhdhote/human-faces-dataset
+- **数据预估大小**: 119 GB
+- **简介**: 该数据集包含约 9.6k 张人脸图像，5k 张真实人脸图像，4.63k 张 AI 生成的人脸图像。
+
+### 特别说明
+
+- 数据集由超神经 Hyper.AI（https://orion.hyper.ai）提供大陆范围内公开下载节点，原始版权归Kaggle及数据集原作者所有。
+- 本项目仅用于学术研究用途，严禁用于任何商业和违法用途。
+- 若需使用数据集，请务必遵循相关平台和原作者的许可协议与使用规范。
+
+---
+
 ## 参考 & 鸣谢
 
 - [Qiskit](https://qiskit.org/)
 - 量子机器学习相关文献
 - 各类公开deepfake数据集
+- 超神经 Hyper.AI 提供的数据集节点及服务
 
 ---
 
